@@ -19,7 +19,7 @@ import AD from "../assets/AD.png";
 import AE from "../assets/AE.png";
 import AF from "../assets/AF.png";
 import Resume from "../assets/Res.jpg";
-import Pdf from "../assets/Gowri.pdf"
+import Pdf from "../assets/Gowri.pdf";
 const pages = ["kunai-video-name", "projects", "certifications", "resume", "contact", "footer"];
 
 const Portfolio = () => {
