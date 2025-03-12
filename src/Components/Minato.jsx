@@ -19,7 +19,7 @@ import AD from "../assets/AD.png";
 import AE from "../assets/AE.png";
 import AF from "../assets/AF.png";
 import Resume from "../assets/Res.jpg";
-import Pdf from "../assets/Gowri.pdf";
+import Pdf from "../assets/Gowri_1.pdf";
 const pages = ["kunai-video-name", "projects", "certifications", "resume", "contact", "footer"];
 
 const Portfolio = () => {
@@ -243,7 +243,7 @@ const Portfolio = () => {
                 <div className="box-content"><h3 className="Cer">Java Programming Fundamentals</h3>
                   <h3 className="Com">EDX</h3>
                   <h3 className="Dat">May 2024</h3>
-                  <h3 className="Li" onClick={() => window.open("https://courses.edx.org/certificates/9d1ce7a06f3f4da2a14ac7f4578bae93", "_blank")}>
+                  <h3 className="LiA" onClick={() => window.open("https://courses.edx.org/certificates/9d1ce7a06f3f4da2a14ac7f4578bae93", "_blank")}>
                     View Certificate
                   </h3></div>
               </div>
@@ -255,7 +255,7 @@ const Portfolio = () => {
                   <h3 className="Cer">CCNA: Introduction to Networks</h3>
                   <h3 className="Com">Cisco</h3>
                   <h3 className="Dat">August 2024</h3>
-                  <h3 className="Li" onClick={() => window.open("https://www.credly.com/badges/489425d4-1853-4d30-aef1-748eb1617915/public_url", "_blank")}>
+                  <h3 className="LiA" onClick={() => window.open("https://www.credly.com/badges/489425d4-1853-4d30-aef1-748eb1617915/public_url", "_blank")}>
                     View Certificate
                   </h3>
                 </div>
@@ -317,9 +317,10 @@ const Portfolio = () => {
               <span className="footer-texts">
                 Forging digital experiences with the swiftness of a shinobi—where every project is a strike of brilliance, and every website leaves a lasting mark.
               </span>
-
-              <img src={kus} alt="Kunai" className="footer-kunais" />
-              <span className="footer-text">@ Gowri Shankar</span>
+              <div className="footer-container">
+                <img src={kus} alt="Kunai" className="footer-kunais" />
+                <span className="footer-text">@ Gowri Shankar</span>
+              </div>
             </div>
             <div className="footer-kunai-container">
               <div className="footer-kunai-item">
