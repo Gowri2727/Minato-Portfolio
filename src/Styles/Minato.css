@@ -1,7 +1,8 @@
 /* Base Styles (Desktop - 2560px and above) */
 body {
-  background-color: #f5f5f5; /* Light background to let colors pop */
-  color: #000; /* Base text in black for contrast */
+  /* background-color: #f5f5f5; */
+  background-color: #FCF7F8; /* Snow */
+  color: #000; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,12 +11,13 @@ body {
 .sidebar {
   width: 7rem;
   position: fixed;
-  top: 25%;
+  top: 15%;
   left: 0.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  z-index: 10;
 }
 
 .kunai-icon {
@@ -106,13 +108,13 @@ body {
 
 /* Title Area */
 .title {
-  color: #ff0000;
+  color: #102542; /* Dark Blue */
   font-size: 50px;
   font-weight: bold;
 }
 
 .subtitle {
-  color: #ffff00;
+  color: #2BC0E4; /* Skyline */
   font-size: 30px;
 }
 
@@ -160,6 +162,7 @@ body {
 }
 
 .project-box {
+  border: 2px solid #102542; /* Dark Blue Outline */
   width: 26rem;
   height: 27rem;
   border-radius: 8px;
@@ -192,9 +195,9 @@ body {
 }
 
 @keyframes colorChange {
-  0% { color: #ff0000; }
-  50% { color: #ffff00; }
-  100% { color: #ff0000; }
+  0% { color: #102542; }
+  50% { color: #A31621; }
+  100% { color: #102542; }
 }
 
 /* Buttons */
@@ -203,7 +206,7 @@ body {
   margin-top: 10px;
   font-size: 19px;
   width: 75px;
-  background-color: #0000ff;
+  background-color: #2BC0E4; /* Skyline */
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -211,7 +214,7 @@ body {
 
 .b1:hover {
   cursor: pointer;
-  background-color: #ff0000;
+  background-color: #A31621; /* Madder */
   color: #fff;
 }
 .b2 {
@@ -220,7 +223,7 @@ body {
   margin-left: 70px;
   font-size: 19px;
   width: 75px;
-  background-color: #0000ff;
+  background-color: #2BC0E4; /* Skyline */
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -228,7 +231,7 @@ body {
 
 .b2:hover {
   cursor: pointer;
-  background-color: #ff0000;
+  background-color: #A31621; /* Madder */
   color: #fff;
 }
 /* Certifications */
@@ -242,7 +245,7 @@ body {
 
 .certificates {
   text-align: center;
-  border: 2px solid #00ff00;
+  border: 2px solid #102542; /* Dark Blue Outline */
   width: 80%;
   padding: 1rem;
   margin-top: -5rem;
@@ -273,7 +276,7 @@ body {
   position: relative;
   background-color: #e0ffe0;
   color: #000;
-  border: 2px solid #00ff00;
+  border: 2px solid #102542; /* Dark Blue Outline */
   border-radius: 8px;
   width: 30%;
   height: 100px;
@@ -304,7 +307,7 @@ body {
   width: 150px;
   height: auto;
   position: absolute;
-  top: 20px;
+  top: -9px;
   left: 0px;
   margin: 0;
 }
@@ -313,7 +316,7 @@ body {
   width: 150px;
   height: 200px;
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: -10px;
   margin: 0;
 }
@@ -328,7 +331,7 @@ body {
   width: 150px;
   height: auto;
   position: absolute;
-  top: 30px;
+  top: -10px;
   left: -15px;
   margin: 0;
 }
@@ -343,7 +346,7 @@ body {
   width: 150px;
   height: auto;
   position: absolute;
-  top: 30px;
+  top: -5px;
   left: -10px;
   margin: 0;
 }
@@ -358,8 +361,8 @@ body {
   width: 150px;
   height: auto;
   position: absolute;
-  top: 37px;
-  left: -5px;
+  top: 20px;
+  left: -7px;
   margin: 0;
 }
 
@@ -373,7 +376,7 @@ body {
   width: 150px;
   height: auto;
   position: absolute;
-  top: 20px;
+  top: -9px;
   left: 0px;
   margin: 0;
 }
@@ -404,8 +407,8 @@ body {
 .cert-boxD:hover,
 .cert-boxE:hover,
 .cert-boxF:hover {
-  background-color: #00ff00;
-  color: #000;
+  background-color: #2BC0E4; /* Skyline */
+  color: white;
 }
 
 .box-content {
@@ -469,21 +472,24 @@ body {
 
 .Li {
   font-size: 20px;
-  color: #0000ff;
+  color: #102542;
   cursor: pointer;
 }
 .LiA {
 /* margin-top: -20px; */
   font-size: 20px;
-  color: #0000ff;
+  color: #102542;
   cursor: pointer;
 }
 
 .Li:hover {
-  background-color: #000;
+  background-color: #A31621;
   color: #fff;
 }
-
+.LiA:hover {
+  background-color: #A31621;
+  color: #fff;
+}
 .resume-cv {
   display: flex;
   align-items: center;
@@ -529,8 +535,8 @@ body {
   justify-content: center;
   height: 50px;
   width: 150px;
-  background-color: #0000ff;
-  color: #fff;
+  background-color: #2BC0E4; /* Skyline */
+  color:black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -538,7 +544,7 @@ body {
 }
 
 .download-btn:hover {
-  background-color: #ff0000;
+  background-color: #A31621; /* Madder */
   color: #fff;
 }
 
@@ -570,8 +576,8 @@ body {
 }
 
 @keyframes textColorChange {
-  0% { color: #ff0000; }
-  100% { color: #ffff00; }
+  0% { color: #102542; }
+  100% { color: #A31621; }
 }
 
 .contact-form {
@@ -600,8 +606,8 @@ body {
 }
 
 .contact-btn {
-  background-color: #0000ff;
-  color: #fff;
+  background-color: #2BC0E4;
+  color: black;
   padding: 0.8rem;
   border-radius: 5px;
   cursor: pointer;
@@ -609,7 +615,7 @@ body {
 }
 
 .contact-btn:hover {
-  background-color: #ff0000;
+  background-color: #A31621;
   color: #fff;
 }
 
@@ -637,7 +643,7 @@ body {
   position: absolute;
   top: 45%;
   left: 43%;
-  color: #000;
+  color: #102542;
   padding: 0.5rem;
   z-index: 1;
   font-weight: bold;
@@ -650,7 +656,7 @@ body {
 .hackerrank {
   position: absolute;
   top: 43%;
-  color: #0000ff;
+  color: #102542;
   padding: 0.5rem;
   z-index: 1;
   font-weight: bold;
@@ -719,7 +725,278 @@ body {
 }
 
 @keyframes footerColorChange {
-  0% { color: #ff0000; }
-  50% { color: #ffff00; }
-  100% { color: #ff0000; }
+  0% { color: #102542; }
+  50% { color: #A31621; }
+  100% { color: #102542; }
+}
+
+
+
+
+/* Laptop/Small Desktop (1024px) */
+@media screen and (max-width: 1024px) {
+  .fit-con {
+    width: 50%;
+  }
+.sidebar{
+  width: 10%;
+  height: 10%;
+}
+  .minato-img {
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .projects-container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .project-box {
+    width: 22rem;
+    height: 24rem;
+  }
+
+  .cert-boxes {
+    gap: 0.5rem;
+  }
+
+  .cert-boxA,
+  .cert-boxB,
+  .cert-boxC,
+  .cert-boxD,
+  .cert-boxE,
+  .cert-boxF {
+    min-width: 400px;
+  }
+
+  .resume-cv {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .resume-img {
+    width: 30rem;
+    height: 25rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .contact-container {
+    width: 90%;
+    gap: 2rem;
+  }
+}
+
+/* Tablet (768px) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 5rem;
+  }
+
+  .kunai-icon {
+    width: 7rem;
+    height: 4rem;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+
+  .minato-img {
+    width: 20rem;
+    height: 25rem;
+  }
+
+  .projects-container {
+    justify-content: center;
+  }
+
+  .project-box {
+    width: 90%;
+    height: 22rem;
+  }
+
+  .cert-boxA,
+  .cert-boxB,
+  .cert-boxC,
+  .cert-boxD,
+  .cert-boxE,
+  .cert-boxF {
+    min-width: 300px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .contact-left,
+  .contact-right,
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .footer-kunais {
+    width: 25rem;
+    height: 20rem;
+    margin-left: 15%;
+  }
+}
+
+/* Mobile (435px) */
+@media screen and (max-width: 435px) {
+  .sidebar {
+    width: 4rem;
+  }
+
+  .kunai-icon {
+    width: 5rem;
+    height: 3rem;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .minato-img {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .cert-boxA,
+  .cert-boxB,
+  .cert-boxC,
+  .cert-boxD,
+  .cert-boxE,
+  .cert-boxF {
+    min-width: 250px;
+    height: 120px;
+    font-size: 1rem;
+  }
+
+  .resume-img {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .resume-buttons {
+    gap: 2rem;
+  }
+
+  .download-btn {
+    width: 120px;
+    height: 40px;
+  }
+
+  .footer-kunais {
+    width: 20rem;
+    height: 15rem;
+    margin-left: 10%;
+  }
+
+  .footer-texts {
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile (325px) */
+@media screen and (max-width: 325px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .minato-img {
+    width: 12rem;
+    height: 16rem;
+  }
+
+  .cert-boxA,
+  .cert-boxB,
+  .cert-boxC,
+  .cert-boxD,
+  .cert-boxE,
+  .cert-boxF {
+    min-width: 200px;
+  }
+
+  .resume-img {
+    width: 16rem;
+    height: 14rem;
+  }
+
+  .footer-kunais {
+    width: 16rem;
+    height: 12rem;
+    margin-left: 5%;
+  }
+}
+
+/* Extra Small Mobile (320px) */
+@media screen and (max-width: 320px) {
+  .sidebar {
+    width: 1rem;
+    height: 5rem;
+  }
+
+  .kunai-icon {
+    width: 4rem;
+    height: 2.5rem;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .minato-img {
+    width: 10rem;
+    height: 14rem;
+  }
+
+  .cert-boxA,
+  .cert-boxB,
+  .cert-boxC,
+  .cert-boxD,
+  .cert-boxE,
+  .cert-boxF {
+    min-width: 180px;
+    height: 140px;
+  }
+
+  .resume-img {
+    width: 14rem;
+    height: 12rem;
+  }
+
+  .download-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .footer-kunais {
+    width: 14rem;
+    height: 10rem;
+    margin-left: 2%;
+  }
+
+  .footer-texts {
+    font-size: 16px;
+  }
 }

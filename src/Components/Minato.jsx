@@ -32,7 +32,7 @@ const Portfolio = () => {
   const [showRasenganMedia, setShowRasenganMedia] = useState(true);
   const [showMoonMedia, setShowMoonMedia] = useState(true);
   const [developerText, setDeveloperText] = useState("");
-  const [textColor, setTextColor] = useState("yellow");
+  const [textColor, setTextColor] = useState("#102542");
 
   const handleIcePopClick = () => setShowIcePopMedia(false);
   const handleRasenganClick = () => setShowRasenganMedia(false);
@@ -77,10 +77,17 @@ const Portfolio = () => {
       textIndex = (textIndex + 1) % texts.length;
     };
 
+    // const changeColor = () => {
+    //   setTextColor(prevColor => (prevColor === "yellow" ? "tamoto" : "yellow"));
+    // };
     const changeColor = () => {
-      setTextColor(prevColor => (prevColor === "yellow" ? "tomato" : "yellow"));
-    };
-
+      setTextColor(prevColor => {
+         if (prevColor === "#102542") return "#A31621"; // Madder
+         if (prevColor === "#A31621") return "#102542"; // Dark Blue
+         return "#102542"; // Reset to yellow
+      });
+   };
+   
     if (showTitle) {
       changeText();
       colorInterval = setInterval(() => {
@@ -279,7 +286,7 @@ const Portfolio = () => {
                   <h3 className="Cer">JavaScript</h3>
                   <h3 className="ComB">IT Spectilist</h3>
                   <h3 className="DatB">-------  ----</h3>
-                  <h3 className="Li" onClick={() => window.open("https://www.hackerrank.com/certificates/d4ef72489666", "_blank")}>
+                  <h3 className="Li" onClick={() => window.open("", "_blank")}>
                     View Certificate
                   </h3>
                 </div>
