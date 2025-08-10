@@ -29,28 +29,53 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-left">
-        <p className="contact-text">
-          Summon me with a message—whether it's a project, a collaboration, or just a chat, I’m always ready to connect.
-        </p>
-      </div>
-      <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
-        <label className="name">Name</label>
-        <input type="text" name="user_name" placeholder="Enter your name" required />
+    // <div className="contact-container">
+    //   <div className="contact-left">
+    //     <p className="contact-text">
+    //       Summon me with a message—whether it's a project, a collaboration, or just a chat, I’m always ready to connect.
+    //     </p>
+    //   </div>
+    //   <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
+    //     <label className="name">Name</label>
+    //     <input type="text" name="user_name" placeholder="Enter your name" required />
 
-        <label className="email">Email</label>
-        <input type="email" name="user_email" placeholder="Enter your email" required />
+    //     <label className="email">Email</label>
+    //     <input type="email" name="user_email" placeholder="Enter your email" required />
 
-        <label className="message">Message</label>
-        <textarea name="message" placeholder="Write your message here" required />
+    //     <label className="message">Message</label>
+    //     <textarea name="message" placeholder="Write your message here" required />
 
-        <button className="contact-btn" type="submit">Submit</button>
-      </form>
-      <div className="contact-right">
-        <img src={contact} alt="Contact" className="contact-image" />
-      </div>
-    </div>
+    //     <button className="contact-btn" type="submit">Submit</button>
+    //   </form>
+    //   <div className="contact-right">
+    //     <img src={contact} alt="Contact" className="contact-image" />
+    //   </div>
+    // </div>
+    <div className="contact-wrapper">
+  <div className="contact-left">
+    <p className="contact-text">
+      Summon me with a message—whether it's a project, a collaboration, or just a chat, I’m always ready to connect.
+    </p>
+  </div>
+
+  <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
+    <label className="name">Name</label>
+    <input type="text" name="user_name" placeholder="Enter your name" required />
+
+    <label className="email">Email</label>
+    <input type="email" name="user_email" placeholder="Enter your email" required />
+
+    <label className="message">Message</label>
+    <textarea name="message" placeholder="Write your message here" required />
+
+    <button className="contact-btn" type="submit">Submit</button>
+  </form>
+
+  <div className="contact-right">
+    <img src={contact} alt="Contact" className="contact-image" />
+  </div>
+</div>
+
   );
 };
 

@@ -19,7 +19,9 @@ import AD from "../assets/AD.png";
 import AE from "../assets/AE.png";
 import AF from "../assets/AF.png";
 import Resume from "../assets/Res.jpg";
-import Pdf from "../assets/Gowri_1.pdf";
+import Pdf from "../assets/Gowri-S.pdf";
+import Ko from "../assets/flying-thunder-god-jutsu.jpg";
+import KK from "../assets/lNF_.gif";
 const pages = ["kunai-video-name", "projects", "certifications", "resume", "contact", "footer"];
 
 const Portfolio = () => {
@@ -30,6 +32,7 @@ const Portfolio = () => {
   const [resetAnimation, setResetAnimation] = useState(true);
   const [showIcePopMedia, setShowIcePopMedia] = useState(true);
   const [showRasenganMedia, setShowRasenganMedia] = useState(true);
+  const [showInfMedia, setShowInfMedia] = useState(true);
   const [showMoonMedia, setShowMoonMedia] = useState(true);
   const [developerText, setDeveloperText] = useState("");
   const [textColor, setTextColor] = useState("#102542");
@@ -37,6 +40,7 @@ const Portfolio = () => {
   const handleIcePopClick = () => setShowIcePopMedia(false);
   const handleRasenganClick = () => setShowRasenganMedia(false);
   const handleMoonClick = () => setShowMoonMedia(false);
+  const handleInfClick = () => setShowInfMedia(false);
   const texts = [
     "Crafting immersive digital experiences with the precision of a shinobi. Every line of code is a kunai, striking with speed, accuracy, and creativity.",
     "Coding with the swiftness of a shinobi—every keystroke a calculated strike, every website a masterpiece in motion.",
@@ -65,6 +69,7 @@ const Portfolio = () => {
       setShowIcePopMedia(true);
       setShowRasenganMedia(true);
       setShowMoonMedia(true);
+      setShowInfMedia(true);
     }
   }, [currentPage]);
 
@@ -169,6 +174,7 @@ const Portfolio = () => {
                       // Reset others if needed:
                       setShowRasenganMedia(true);
                       setShowMoonMedia(true);
+                      setShowInfMedia(true);
                     }}
                   />
                 ) : (
@@ -181,7 +187,7 @@ const Portfolio = () => {
 
               <div className="project-box project-rasengan">
                 {showRasenganMedia ? (
-                  <img src={Re} alt="Re" className="project-media" onClick={() => { setShowRasenganMedia(false); setShowIcePopMedia(true); setShowMoonMedia(true); }} />
+                  <img src={Re} alt="Re" className="project-media" onClick={() => { setShowRasenganMedia(false); setShowIcePopMedia(true); setShowMoonMedia(true); setShowInfMedia(true); }} />
                 ) : (
                   <img src={Rescue} alt="Rescue Gif" className="project-media" />
                 )}
@@ -194,7 +200,7 @@ const Portfolio = () => {
               <div className="project-box project-moon">
                 {showMoonMedia ? (
                   <img src={Po} alt="Po" className="project-media" onClick={() => {
-                    setShowMoonMedia(false); setShowIcePopMedia(true); setShowRasenganMedia(true);
+                    setShowMoonMedia(false); setShowIcePopMedia(true); setShowRasenganMedia(true); setShowInfMedia(true);
                   }} />
                 ) : (
                   <img src={portf} alt="Portfolio Gif" className="project-media" />
@@ -203,6 +209,20 @@ const Portfolio = () => {
                   <div className="p1">Town Plan</div>
                   <button className="b1" onClick={() => window.open("https://github.com/Gowri2727/Town-Plan.git", "_blank")} > GitHub </button>
                   <button className="b2" onClick={() => window.open("https://town-planning.vercel.app/", "_blank")} > Live </button>
+                </div>
+              </div>
+              <div className="project-box project-find">
+                {showInfMedia ? (
+                  <img src={Ko} alt="Po" className="project-media" onClick={() => {
+                    setShowMoonMedia(true); setShowIcePopMedia(true); setShowRasenganMedia(true); setShowInfMedia(false);
+                  }} />
+                ) : (
+                  <img src={KK} alt="Portfolio Gif" className="project-media" />
+                )}
+                <div className="project-namey">
+                  <div className="p1">LostNFound</div>
+                  <button className="b1" onClick={() => window.open("https://github.com/Gowri2727/LostNFound", "_blank")} > GitHub </button>
+                  <button className="b2" onClick={() => window.open("https://lostnfoundfrontend.onrender.com/", "_blank")} > Live </button>
                 </div>
               </div>
             </div>
@@ -222,7 +242,7 @@ const Portfolio = () => {
                 <div className="box-content">
                   <h3 className="Cer">JavaScript Essentials 1</h3>
                   <h3 className="Com">Cisco</h3>
-                  <h3 className="Dat">December 2024</h3>
+                  {/* <h3 className="Dat">December 2024</h3> */}
                   <h3
                     className="Li"
                     onClick={() => window.open("https://www.credly.com/badges/a38b5933-fad6-4436-b669-2aa88d13460c/public_url", "_blank")}
@@ -238,7 +258,7 @@ const Portfolio = () => {
                 </div>
                 <div className="box-content"> <h3 className="Cer">JavaScript Essentials 2</h3>
                   <h3 className="Com">Cisco</h3>
-                  <h3 className="Dat">December 2024</h3>
+                  {/* <h3 className="Dat">December 2024</h3> */}
                   <h3 className="Li" onClick={() => window.open("https://www.credly.com/badges/91e7534d-0709-4877-99aa-f679546b017e/public_url", "_blank")}>
                     View Certificate
                   </h3></div>
@@ -248,8 +268,8 @@ const Portfolio = () => {
                   <img src={AC} alt="AC" className="anim-AC" />
                 </div>
                 <div className="box-content"><h3 className="Cer">Java Programming Fundamentals</h3>
-                  <h3 className="Com">EDX</h3>
-                  <h3 className="Dat">May 2024</h3>
+                  <h3 className="ComA">EDX</h3>
+                  {/* <h3 className="Dat">May 2024</h3> */}
                   <h3 className="LiA" onClick={() => window.open("https://courses.edx.org/certificates/9d1ce7a06f3f4da2a14ac7f4578bae93", "_blank")}>
                     View Certificate
                   </h3></div>
@@ -261,7 +281,7 @@ const Portfolio = () => {
                 <div className="box-content">
                   <h3 className="Cer">CCNA: Introduction to Networks</h3>
                   <h3 className="Com">Cisco</h3>
-                  <h3 className="Dat">August 2024</h3>
+                  {/* <h3 className="Dat">August 2024</h3> */}
                   <h3 className="LiA" onClick={() => window.open("https://www.credly.com/badges/489425d4-1853-4d30-aef1-748eb1617915/public_url", "_blank")}>
                     View Certificate
                   </h3>
@@ -270,11 +290,12 @@ const Portfolio = () => {
               <div className="cert-boxE">
                 <div className="imgE">
                   <img src={AE} alt="AE" className="anim-AE" />
-                </div>        <div className="box-content">
-                  <h3 className="Cer">JavaScript (Basic)</h3>
-                  <h3 className="ComA">HackerRank</h3>
-                  <h3 className="DatA">September 2024</h3>
-                  <h3 className="Li" onClick={() => window.open("https://www.hackerrank.com/certificates/d4ef72489666", "_blank")}>
+                </div>        
+                <div className="box-content">
+                  <h3 className="Cer">Oracel Certified Foundations Associate</h3>
+                  <h3 className="ComA">Oracel</h3>
+                  {/* <h3 className="DatA">September 2024</h3> */}
+                  <h3 className="Li" onClick={() => window.open("https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC6483206&trackId=ODB12COJA&key=520dba41f01c5c778eab163dc67b46c529c9eac3", "_blank")}>
                     View Certificate
                   </h3>
                 </div>
@@ -285,12 +306,13 @@ const Portfolio = () => {
                 </div>        <div className="box-content">
                   <h3 className="Cer">JavaScript</h3>
                   <h3 className="ComB">IT Spectilist</h3>
-                  <h3 className="DatB">-------  ----</h3>
-                  <h3 className="Li" onClick={() => window.open("", "_blank")}>
+                  {/* <h3 className="DatB">-------  ----</h3> */}
+                  <h3 className="Li" onClick={() => window.open("https://drive.google.com/file/d/19XCOXCo0Rna3yy8JRMLIPGnVuA7tVyy1/view?usp=drive_link", "_blank")}>
                     View Certificate
                   </h3>
                 </div>
               </div>
+              
             </div>
           </div>
         )}
@@ -332,7 +354,7 @@ const Portfolio = () => {
             <div className="footer-kunai-container">
               <div className="footer-kunai-item">
                 <img src={kus} alt="Kunai" className="footer-kunai" />
-                <a href="https://www.hackerrank.com/profile/gowrishankarenu1" className="hackerrank" target="_blank">HackerRank</a>
+                <a href="https://codolio.com/profile/Gowri2727" className="hackerrank" target="_blank">Codolio</a>
               </div>
               <div className="footer-kunai-item">
                 <img src={kus} alt="Kunai" className="footer-kunai" />
