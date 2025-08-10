@@ -743,8 +743,8 @@ body {
 }
 .footer-text {
   position: absolute;
-  top: -23%;
-  left: 10%;
+  top: 45%;
+  left: 23%;
   color: #102542;
   padding: 0.5rem;
   z-index: 1;
@@ -856,9 +856,10 @@ body {
     margin-top: 35%;
 }
 .footer-text{
+  position: absolute;
   font-size: 0.8rem;
-  margin-top: 74%;
-  margin-left: 21%;
+  margin-top: 17%;
+  margin-left: 8%;
   font-style: italic;
 }
 
@@ -1172,8 +1173,8 @@ margin-left: -20%;
   }
   .footer-text { 
     font-size: 0.85rem;
-    margin-left: 7%;
-    margin-top: 105%;
+    margin-left: -7%;
+    margin-top: 16%;
   }
   .footer-kunai-container{
     /* width: 30%; */
@@ -1714,8 +1715,8 @@ min-width: 290px;
   font-size: 0.63rem;
   width: 19rem;
   height: 15rem;
-  margin-top: 120%;
-  margin-left:-10%;
+  margin-top: 25%;
+  margin-left:-23%;
 }
 .footer-kunai-container {
   display: flex;
