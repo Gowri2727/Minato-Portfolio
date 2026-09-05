@@ -1,0 +1,24 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #e9f4ff;
+  background: #08111f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
